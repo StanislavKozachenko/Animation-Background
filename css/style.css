@@ -1,0 +1,70 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+body {
+	overflow-x: hidden;
+}
+section {
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	background-color: #7A5980;
+}
+section h2 {
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	line-height: 100vh;
+	text-align: center;
+	font-size: 10vh;
+	color: #fff;
+	font-weight: 1;
+}
+.banner {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	overflow: hidden;
+	flex-wrap: wrap;
+}
+.banner .blocks {
+	position: relative;
+	display: block;
+	height: 5vw;
+	width: 5vw;
+	animation: animate 0.75s ease-in-out forwards;
+}
+.banner .blocks:nth-child(even) {
+	animation: animate 1s ease-in-out forwards;
+}
+.banner .blocks:nth-child(7n+3) {
+	animation: animate 2.5s ease-in-out forwards;
+}
+.banner .blocks:nth-child(7n+7) {
+	animation: animate 1.5s ease-in-out forwards;
+}
+@keyframes animate {
+	0% {
+		opacity: 0;
+		transform: scale(0) translateY(1000px);
+	}
+	50% {
+		opacity: 1;
+		background: url(../img/woman-591576.jpg);
+		background-position: center;
+		background-size: cover;
+		background-attachment: fixed;
+	}
+	100% {
+		opacity: 1 scale(1) translateY(0);
+		background: url(../img/woman-591576.jpg);
+		background-position: center;
+		background-attachment: fixed;
+		background-size: cover;
+	}
+}
