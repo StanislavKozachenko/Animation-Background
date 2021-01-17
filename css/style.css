@@ -35,7 +35,7 @@ section h2 {
 .banner .blocks {
 	position: relative;
 	display: block;
-	height: 5vw;
+	height: 5vh;
 	width: 5vw;
 	animation: animate 0.75s ease-in-out forwards;
 }
